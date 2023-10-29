@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Macondo", cursive;
+}
+
+.startScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #16212fe3;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    transition: all 0.3s;
+}
+
+.startScreen__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.startScreen__player + .startScreen__player {
+    margin-left: 20%;
+}
+
+.startScreen__btn:nth-child(1) {
+    margin: 0 auto;
+}
+
+.startScreen-wrap {
+    display: flex;
+}
+
+.startScreen__btn {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #c4c4c4;
+}
+
+#restart {
+    position: absolute;
+    top: calc(50% + 24px);
+    left: calc(50% - 22px);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 99999;
+    background: #fff;
+    border: 4px solid #c4c4c4;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
